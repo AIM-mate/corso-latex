@@ -1,0 +1,53 @@
+\documentclass[11pt]{beamer}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usetheme{Warsaw}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{sources.bib}
+\author{Andrea Di Primio}
+\title{Presentazione di esempio}
+\begin{document}
+
+	%\subtitle{}
+	%\logo{}
+	%\institute{}
+	%\date{}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+	\begin{frame}
+		\maketitle
+	\end{frame}
+		
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+
+	\section{Sezione 1}
+	\begin{frame}
+		\onslide<1->
+		\begin{block}{Overlay 1}
+			overlay 1
+		\end{block}
+		\onslide<2->
+		\begin{block}{Overlay 2}
+			overlay 2
+		\end{block}
+		\onslide<4>
+		\begin{block}{Overlay 3}
+			overlay 3
+		\end{block}
+		\onslide<3->
+		\begin{equation*}
+			a^2 + b^2 = c^2
+		\end{equation*}
+	\end{frame}
+	\section{Sezione 2}
+	
+	\begin{frame}[allowframebreaks]{Bibliografia essenziale}
+		\nocite{*}
+		\printbibliography
+	\end{frame}
+\end{document}
